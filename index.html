@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bridge & Bloom | Private Practice Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Bridge <span>&amp;</span> Bloom</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="pages/disclaimer.html" class="nav-disclaimer">Disclaimer</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a Consult</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#services" onclick="closeMobile()">Services</a></li>
+      <li><a href="#approach" onclick="closeMobile()">Approach</a></li>
+      <li><a href="#team" onclick="closeMobile()">Team</a></li>
+      <li><a href="#gallery" onclick="closeMobile()">Gallery</a></li>
+      <li><a href="#faq" onclick="closeMobile()">FAQ</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+      <li><a href="pages/disclaimer.html" onclick="closeMobile()">Disclaimer</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-petals" aria-hidden="true">
+      <span class="petal p1"></span>
+      <span class="petal p2"></span>
+      <span class="petal p3"></span>
+      <span class="petal p4"></span>
+      <span class="petal p5"></span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Private Practice Psychology</p>
+      <h1 class="hero-title">Supporting Growth.<br><em>Building Bridges.</em><br>Helping You Bloom.</h1>
+      <p class="hero-sub">A compassionate, evidence-based practice dedicated to meeting you where you are - and walking with you toward where you want to be.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request a Free Consultation</button>
+        <a href="#services" class="btn-ghost">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-logo-slot">
+      <img src="images/logo/logo-bridge-and-bloom.png" alt="Bridge & Bloom logo">
+    </div>
+    <div class="hero-arch" aria-hidden="true">
+      <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <ellipse cx="300" cy="340" rx="280" ry="200" fill="none" stroke="#DBA8FF" stroke-width="2" opacity="0.35"/>
+        <ellipse cx="300" cy="340" rx="210" ry="150" fill="none" stroke="#F5D99A" stroke-width="1.5" opacity="0.3"/>
+        <ellipse cx="300" cy="340" rx="140" ry="100" fill="none" stroke="#A8CCE0" stroke-width="1" opacity="0.25"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card gold">
+          <p class="card-stat">Compassionate</p>
+          <p class="card-label">Care-First Practice</p>
+        </div>
+        <div class="about-card blue">
+          <p class="card-stat">Evidence-Based</p>
+          <p class="card-label">CBT &amp; ACT Methods</p>
+        </div>
+        <div class="about-flower" aria-hidden="true">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="14" fill="#C97EFF" opacity="0.7"/>
+            <ellipse cx="60" cy="30" rx="10" ry="18" fill="#DBA8FF" opacity="0.6"/>
+            <ellipse cx="60" cy="90" rx="10" ry="18" fill="#DBA8FF" opacity="0.6"/>
+            <ellipse cx="30" cy="60" rx="18" ry="10" fill="#DBA8FF" opacity="0.6"/>
+            <ellipse cx="90" cy="60" rx="18" ry="10" fill="#DBA8FF" opacity="0.6"/>
+            <ellipse cx="39" cy="39" rx="10" ry="18" fill="#F5D99A" opacity="0.5" transform="rotate(45 39 39)"/>
+            <ellipse cx="81" cy="39" rx="10" ry="18" fill="#F5D99A" opacity="0.5" transform="rotate(-45 81 39)"/>
+            <ellipse cx="39" cy="81" rx="10" ry="18" fill="#F5D99A" opacity="0.5" transform="rotate(-45 39 81)"/>
+            <ellipse cx="81" cy="81" rx="10" ry="18" fill="#F5D99A" opacity="0.5" transform="rotate(45 81 81)"/>
+          </svg>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow">About the Practice</p>
+        <h2 class="section-title">A Space Built for <em>Your</em> Healing</h2>
+        <p>Bridge &amp; Bloom was founded on the belief that therapy should feel like a partnership - warm, collaborative, and rooted in respect for your unique story. Whether you're navigating a season of change, working through past experiences, or seeking tools to manage daily stress, this practice offers a safe, affirming space to do that work.</p>
+        <p>With a foundation in evidence-based approaches, sessions are tailored to your individual needs and goals. No two paths look the same, and that's exactly the point.</p>
+        <div class="about-values">
+          <div class="value-chip">&#10022; Client-centered care</div>
+          <div class="value-chip">&#10022; Culturally affirming</div>
+          <div class="value-chip">&#10022; Strengths-based</div>
+          <div class="value-chip">&#10022; Trauma-informed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Services Designed Around <em>You</em></h2>
+        <p class="section-sub">Each service is offered with flexibility, compassion, and a commitment to evidence-based care.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon violet">&#9672;</div>
+          <h3>Cognitive Assessment</h3>
+          <p>Be assessed by a licensed psychologist and receive recommendations on strengths and weaknesses, accommodations, and career advice.</p>
+          <span class="service-tag">By appointment</span>
+        </div>
+        <div class="service-card featured">
+          <div class="service-icon gold">&#10047;</div>
+          <h3>Individual Therapy</h3>
+          <p>Collaborate with a licensed psychologist to work towards your goals. Learn what mental disorders may affect you and how to manage them. Utilize many evidence-based modalities including Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Dialectical Behavioral Therapy (DBT), and more.</p>
+          <span class="service-tag">50-min sessions</span>
+        </div>
+        <div class="service-card featured">
+          <div class="service-icon gold">&#9670;</div>
+          <h3>Career Consultation</h3>
+          <p>Work with a licensed psychologist to identify your strengths and weaknesses. Discuss what careers may best utilize your strengths.</p>
+          <span class="service-tag">Goal-oriented</span>
+        </div>
+        <div class="service-card">
+          <div class="service-icon violet">&#9673;</div>
+          <h3>Dance &amp; Movement Therapy</h3>
+          <p>Move with a Registered Dance/Movement Therapist to process emotion, reduce stress, and reconnect mind and body - no dance experience necessary.</p>
+          <span class="service-tag">Mind-body integrated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH / GALLERY -->
+  <section class="section approach-section" id="approach">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">The Approach</p>
+        <h2 class="section-title">How We Work Together</h2>
+      </div>
+      <div class="approach-steps">
+        <div class="step">
+          <div class="step-marker violet">01</div>
+          <div class="step-body">
+            <h3>Free Consultation</h3>
+            <p>We begin with a no-pressure 15-minute call to see if we're a good fit. You ask questions, I listen - no commitment required.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-marker gold">02</div>
+          <div class="step-body">
+            <h3>Intake &amp; Goal Setting</h3>
+            <p>Your first session is about understanding your story and what brings you here. Together we'll outline what meaningful progress looks like for you.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-marker blue">03</div>
+          <div class="step-body">
+            <h3>Ongoing Therapy</h3>
+            <p>Weekly or biweekly sessions tailored to your pace. We revisit goals regularly to ensure the work stays aligned with your evolving needs.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-marker violet">04</div>
+          <div class="step-body">
+            <h3>Growth &amp; Transition</h3>
+            <p>When you're ready, we'll plan a thoughtful wrap-up - celebrating your progress and equipping you with tools to carry forward.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET THE TEAM -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Meet the Team</p>
+        <h2 class="section-title">The Person Behind the <em>Practice</em></h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-photo">
+          <img src="images/team/headshot.jpeg" alt="Dr. Brianna DiRienzo">
+        </div>
+        <div class="team-bio">
+          <h3>Future Dr. Brianna DiRienzo</h3>
+          <p class="team-credentials">Future Licensed Psychologist and Registered Dance/Movement Therapist</p>
+          <p>PsyD Candidate</p>
+          <h3>Education</h3>
+          <p>Clinical Psychology PsyD from Philadelphia College of Osteopathic Medicine, Class of 2029.</p>
+          <p>Bachelor of Science in Psychology from Drexel University, Class of 2022.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Gallery</p>
+        <h2 class="section-title">A Look Inside the <em>Office</em></h2>
+        <p class="section-sub">A look at the office and waiting area.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-slot"><img src="images/gallery/gallery-1.jpg" alt="Bridge & Bloom office"></div>
+        <div class="gallery-slot"><img src="images/gallery/gallery-2.jpg" alt="Bridge & Bloom office"></div>
+        <div class="gallery-slot"><img src="images/gallery/gallery-3.jpg" alt="Bridge & Bloom office"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">FAQ</p>
+        <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How do I get there?</summary>
+          <p>Our office is accessible to Center City Philadelphia via SEPTA Regional Rail, other major metropolitan areas like New York City via Amtrak, and the PA and NJ via I-76. There is parking on the premise.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you accept insurance?</summary>
+          <p>We currently do not accept insurance, but we can provide a Superbill for reimbursement through your insurance.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What types of disorders do you treat?</summary>
+          <p>My focus is on adolescents and emerging adults navigating identity formation and self-discovery. Throughout this stage of life, a lot of stress, anxiety, and depression may appear. CBT and other modalities are evidence based treatments for depression and anxiety.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What are the assessments measuring?</summary>
+          <p>The assessments can identify processing disorders, learning disorders, ADHD, and memory difficulties. These findings can help to establish potential accommodations for students.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Ready to Take<br>the First Step?</h2>
+        <p>Reaching out takes courage. Fill out the form and expect a response within 2 business days. All inquiries are confidential.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">&#9990;</span>
+            <span>(555) 000-0000</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#9993;</span>
+            <span>hello@bridgeandbloom.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#9737;</span>
+            <span>Telehealth &amp; In-Person Available</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service of Interest</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option>Individual Therapy</option>
+            <option>Counseling</option>
+            <option>CBT</option>
+            <option>ACT</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me a little about what brings you here..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Send Message</button>
+        <p class="form-note">&#128274; This form is for scheduling inquiries only. For crisis support, please contact 988 (Suicide &amp; Crisis Lifeline).</p>
+        <div class="form-success" id="formSuccess">
+          &#10003; Thank you - your message has been received. You'll hear back within 2 business days.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Bridge <span>&amp;</span> Bloom</p>
+        <p class="footer-tagline">Supporting Growth. Building Bridges. Helping You Bloom.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#team">Team</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="pages/disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Bridge &amp; Bloom Psychology. <a href="pages/disclaimer.html">Academic Disclaimer</a> - This is a fictional practice created for educational purposes.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

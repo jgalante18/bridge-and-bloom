@@ -1,0 +1,3 @@
+exclude:
+  - server.py
+  - README.md
